@@ -53,9 +53,39 @@
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="18dp"
         android:text="ADD"
-        app:layout_constraintEnd_toEndOf="@+id/edtSecondNumber"
-        app:layout_constraintStart_toStartOf="@+id/edtSecondNumber"
+        app:layout_constraintBottom_toTopOf="@+id/btnMultiply"
+        app:layout_constraintStart_toStartOf="@+id/btnMultiply" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        android:text="MULTIPLY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtSecondNumber" />
+
+    <Button
+        android:id="@+id/btnDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="18dp"
+        android:text="DIVIDE"
+        app:layout_constraintStart_toStartOf="@+id/btnMultiply"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiply" />
+
+    <Button
+        android:id="@+id/btnSubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="21dp"
+        android:text="SUBTRACT"
+        app:layout_constraintStart_toStartOf="@+id/btnMultiply"
+        app:layout_constraintTop_toBottomOf="@+id/btnDivide" />
 </androidx.constraintlayout.widget.ConstraintLayout>
